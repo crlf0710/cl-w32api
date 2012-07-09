@@ -5,12 +5,12 @@
   (:use)
   (:import-from #:common-lisp
                 #:in-package
-                #:+
-                #:-
-                #:ash)
+                #:&rest)
   (:import-from #:nffi
-                #:defcfun
+                #:defctype-forward
                 #:defctype
+                #:defcvar
+                #:defcfun
                 #:defcstruct
                 #:defcunion
                 #:defcenum))
