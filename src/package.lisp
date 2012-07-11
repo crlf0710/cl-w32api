@@ -5,7 +5,12 @@
   (:use)
   (:import-from #:common-lisp
                 #:in-package
-                #:&rest)
+                #:&whole
+                #:&optional
+                #:&key
+                #:&rest
+                #:setf
+                #:nil)
   (:import-from #:nffi
                 #:defctype-forward
                 #:defctype
@@ -13,7 +18,12 @@
                 #:defcfun
                 #:defcstruct
                 #:defcunion
-                #:defcenum))
+                #:defcenum
+
+                #:allocate-foreign-string)
+
+  (:export #:allocate-foreign-astring
+           #:allocate-foreign-wstring))
 
 
                 

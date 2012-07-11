@@ -39,6 +39,7 @@
     ((:file "package")
      (:file "builtin")
      (:file "types")
-     (:file "functions")))))
+     (:file "functions")
+     (:file "encoding")))))
 
 
