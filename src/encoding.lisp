@@ -39,8 +39,3 @@
                            (cl:or pool nffi::*foreign-object-pool*)))
 
 
-#|
-(define-wrapper-macro message-box
-    #+cl-w32api-use-unicode message-box-w
-    #-cl-w32api-use-unicode message-box-a (hwnd lptext lpcaption utype))
-|#

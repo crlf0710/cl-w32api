@@ -40,6 +40,7 @@
      (:file "builtin")
      (:file "types")
      (:file "functions")
-     (:file "encoding")))))
+     (:file "encoding")
+     (:file "encoding-functions")))))
 
 
