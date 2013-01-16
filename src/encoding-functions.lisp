@@ -55,4 +55,6 @@
     #+cl-w32api-use-unicode ext-text-out-w
     #-cl-w32api-use-unicode ext-text-out-a (hdc x y options lprect lpstring c lpdx))
 
-    
+(define-wrapper-macro draw-text
+    #+cl-w32api-use-unicode draw-text-w
+    #-cl-w32api-use-unicode draw-text-a (hdc lpchtext cchtext lprc format))

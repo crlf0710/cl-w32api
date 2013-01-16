@@ -11,8 +11,8 @@
                 #:&rest
                 #:setf
                 #:nil)
-  (:import-from #:nffi
-                #:defctype-forward
+  (:import-from #:cffi
+;;                #:defctype-forward
                 #:defctype
                 #:defcvar
                 #:defcfun
@@ -20,7 +20,8 @@
                 #:defcunion
                 #:defcenum
 
-                #:allocate-foreign-string)
+;;                #:allocate-foreign-string
+                )
 
   (:export #:allocate-foreign-astring
            #:allocate-foreign-wstring))

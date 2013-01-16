@@ -31,16 +31,20 @@
   :description "CL-W32API"
   :author  "Charles Lew <crlf0710@gmail.com>"
   :license "BSD"
-  :depends-on (:nffi)
+  :depends-on (:cffi-libffi)
   :components
   ((:module "src"
     :serial t
     :components
     ((:file "package")
+     (:file "compatibility")
      (:file "builtin")
+
+     
      (:file "types")
      (:file "functions")
-     (:file "encoding")
-     (:file "encoding-functions")))))
+     ;(:file "encoding")
+     ;(:file "encoding-functions")
+     ))))
 
 
